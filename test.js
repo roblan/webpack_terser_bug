@@ -1,17 +1,11 @@
 const assert = require("assert");
-const oryginal = require("../source");
-const unminified = require("../dist/unminified");
-const minified = require("../dist/minified");
 
 const defaultValue = "CONDITIONAL_DEFAULT_VALUE";
 const key = "SET_VALUE";
 
 const types = {
-  oryginal: require("../source"),
-  tersered: require("../dist/tersered"),
-  unminified: require("../dist/unminified"),
-  unminified_tersered: require("../dist/unminified_tersered"),
-  minified: require("../dist/minified"),
+  oryginal: require("./source"),
+  tersered: require("./tersered"),
 };
 
 describe("Terser pre-optymalization", function() {
